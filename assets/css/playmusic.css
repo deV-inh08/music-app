@@ -1,0 +1,159 @@
+@media screen and (max-width: 766px) {
+    html {
+        font-size: 62.5%;
+        font-family: "Inter", sans-serif;
+    }
+    #main {
+        position: relative;
+        background-color: #100A1C;
+        height: 100%;
+    }
+    .container {
+        width: 324px;
+        margin: auto;
+        margin-top: 180px;  
+    }
+
+    .header {
+        position: relative;
+        height: 200px;
+        background-color: #6928eb;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .header::after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        width: 95%;
+        left: 10px;
+        height: 70px;
+        background-color: rgba(105, 40, 235, 0.5);
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .header > .nav {
+        width: 324px;
+        position: relative;
+        margin: auto;
+        z-index: 100;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav > .title {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    figure {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    figure > .img__cd {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 100%;
+        z-index: 3;
+    }
+
+    .container > .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info--nameSong {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .process {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .process > .process--starttime, .process--endtime {
+        color: #fff;
+    }
+    .process > .player--progress {
+        position: relative;
+        height: 15px;
+        background-color: #ccc;
+        width: 100%;
+        margin: 0 10px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .player--progress > .player--progress--fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(125, 20, 167, 0.867);
+        top: 0;
+        left: -100px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+    }
+    .block__btn {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .block__btn > .pause {
+        background-color: #7368EF;
+        padding: 20px 20px;
+        border-radius: 50%;
+        box-shadow: 10px 0px 66px -4px rgba(145, 99, 224, 0.71);
+-webkit-box-shadow: 10px 0px 66px -4px rgba(162, 119, 235, 0.71);
+-moz-box-shadow: 10px 0px 66px -4px rgba(156, 109, 236, 0.71);
+    }
+
+    .list__song {
+        width: 324px;
+        margin: 30px auto 0 auto;
+        height: auto;
+    }
+
+    .list__song > article.song {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        background-color: rgba(105,40,235, 0.8);
+        color: #fff;
+        padding: 15px 0;
+        margin: 5px 0;
+    }
+
+    .song > .numberic {
+        font-size: 2rem;
+    }
+    .song > .info__song {
+        font-size: 1.2rem;
+    }
+
+    .song__name {
+        display: inline-block;
+        padding-bottom: 6px;
+        pointer-events: none;
+    }
+    .numberic, .singer__name, .info__song {
+        pointer-events: none;
+    }
+}

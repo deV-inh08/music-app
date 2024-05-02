@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- play music css -->
+    <link rel="stylesheet" href="./assets/css/playmusic.css">
+</head>
+<body>
+    <main id="main">
+        <!-- header -->
+        <header class="header">
+            <nav class="nav">
+                <a href="./playlist.html">
+                    <img class="btn--back" src="./assets/img/img_playlist/back-arrow.svg" alt="Back Home">
+                </a>
+                <p class="title">Now Playing</p>
+                <img src="./assets/img/img_playmusic/menu_bar.svg" alt="">
+            </nav>
+            <figure>
+                <img class="img__cd" src="./assets/img/img_playmusic/image_cd1.jpg" alt="">
+            </figure>
+        </header>
+        <!-- container -->
+        <div class="container">
+            <section class="info">
+                <img src="./assets/img/img_playmusic/icon_heart.svg" alt="">
+                <p class="info--nameSong">V Music</p>
+                <img src="./assets/img/img_playmusic/menu.svg" alt="">
+            </section>
+            <div class="process">
+                <span class="process--starttime">0:00</span>
+                <div class="player--progress">
+                    <div class="player--progress--fill"></div>
+                </div>
+                <span class="process--endtime">0:00</span>
+            </div>
+            <section class="block__btn">
+                <img src="./assets/img/img_playmusic/random.svg" alt="">
+                <img src="./assets/img/img_playmusic/back song.svg" alt="">
+                <img class="pause" src="./assets/img/img_playmusic/play.svg" alt="">
+                <img src="./assets/img/img_playmusic/next song.svg" alt="">
+                <img src="./assets/img/img_playmusic/repeat.svg" alt="">
+            </section>
+            <audio id="audio" src="./assets/music/Buông đôi tay nhau ra.mp3"></audio>
+        </div>
+        <section class="list__song"></section>
+        </main>
+    <script src="./assets/js/playmusic.js"></script>
+</body>
+</html>

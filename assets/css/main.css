@@ -1,0 +1,124 @@
+@media screen and (max-width:768px) {
+    html {
+        font-family: "Inter", sans-serif;
+        font-size: 62.5%;
+    }
+
+    #main {
+        position: relative;
+    }
+
+    .container {
+        position: fixed;
+        inset: 0;
+        background-color: #100A1C ;
+    }
+
+    .circle {
+        position: absolute;
+        top: 0;
+        left: -17px;
+    }
+
+    .headphone {
+        width: 200px;
+        position: absolute;
+        left: 23%;
+        top: 12%;
+        animation: heart 2s infinite alternate;
+    }
+    @keyframes heart {
+        from {
+            transform: translateY(-10px);
+        }
+        to {
+            transform: translateY(30px);
+        }
+    }
+    .blur_1 {
+        position: absolute;
+        top: 0;
+        left: -60px;
+    }
+
+    .container__content {
+        width: 200px;
+        height: 40px;
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        text-align: center;
+    }
+    .container__content--title {
+        color: #fff;
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .container__content--desc {
+        color: #fff;
+        font-weight: 300;
+
+    }
+
+    .container__button {
+        display: flex;
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blur_2 {
+        position: absolute;
+        top: 100px;
+        left: -10px;
+    }
+
+    .container__button--start {
+        z-index: 100;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #9668EF;
+        padding: 20px 40px 20px 30px;
+        border-radius: 20px;
+    }
+
+    .image2 {
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        z-index: 100;
+
+    }
+
+    .container__footer {
+        position: absolute;
+        bottom: 40px;
+        left: 43%;
+        text-align: center;
+    }
+
+    .footer--title {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .footer--desc {
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .blur_3 {
+        position: absolute;
+        bottom: -110px;
+        left: 0;
+    }
+}
